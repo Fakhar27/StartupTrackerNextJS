@@ -1,4 +1,5 @@
 import React from "react"
+import Link from 'next/link'
 
 export default function RootGroupLayout({
     children,
@@ -11,10 +12,10 @@ export default function RootGroupLayout({
           <nav className="flex justify-between">
             <div>Main Site</div>
             <div className="flex gap-4">
-              <a href="/dash">Dashboard</a>
-              <a href="/dash/accounts">Accounts</a>
-              <a href="/dash/users">Users</a>
-            </div>
+  <Link href="/dash">Dashboard</Link>
+  <Link href="/dash/accounts">Accounts</Link>
+  <Link href="/dash/users">Users</Link>
+</div>
           </nav>
         </header>
         <main className="p-4">{children}</main>

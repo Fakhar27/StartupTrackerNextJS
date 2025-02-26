@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 
 export default function TestGroupLayout({
     children,
@@ -11,9 +12,9 @@ export default function TestGroupLayout({
           <div className="flex justify-between items-center">
             <h1>Test Environment</h1>
             <div className="flex gap-4">
-              <a href="/cicd">CI/CD</a>
-              <a href="/docker">Docker</a>
-            </div>
+  <Link href="/cicd">CI/CD</Link>
+  <Link href="/docker">Docker</Link>
+</div>
           </div>
         </header>
         <main className="p-4">{children}</main>
